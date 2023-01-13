@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>Auva & Irul</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="Auva & Irul" name="keywords">
+    <meta content="Auva & Irul" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -37,10 +37,12 @@
         <div class="container py-0">
             <div class="row m-0 mb-4 mb-md-0 pb-2 pb-md-0">
                 <div class="col-md-6 p-0" style="min-height: 700px;">
+                    
                     <div class="carousel-indicators d-flex flex-column align-items-center justify-content-start pt-5 h-100 m-4">
-                        <p><em>"Dan segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat kebesaran Allah"</em></p>
-                        <h3 class="font-secondary font-weight-normal text-muted mb-3">QS. Az Zariyat : 49</h3>
-                        <p>"Sungguh besar Rahmat dan Karunia Allah yang diberikan kepada keluarga kami. Izinkan kami mengundang sekaligus mengharapkan doa restu dari Bapak/Ibu dan Saudara/i dalam acara pernikahan Putra-Putri kami."</p>
+                        <img class="w-auto h-auto pb-1" src="img/bismillah.png">
+                        <p class="text-center"><em>"Dan segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat kebesaran Allah"</em></p>
+                        <h3 class="font-secondary font-weight-normal text-muted">QS. Az Zariyat : 49</h3>
+                        <div class="text-center pt-2"><small>"Sungguh besar Rahmat dan Karunia Allah yang diberikan kepada keluarga kami. Izinkan kami mengundang sekaligus mengharapkan doa restu dari Bapak/Ibu dan Saudara/i dalam acara pernikahan Putra-Putri kami."</small></div>
                     </div>
                         
                     <img class="position-absolute w-100 h-100" src="img/gambar-2.jpg" style="object-fit: cover;">
@@ -164,7 +166,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="text-center">
-                        <form>
+                        <!-- <form> -->
                             <div class="form-row">
                                 <div class="form-group col-sm-12">
                                     <input type="text" class="form-control bg-secondary border-0 py-4 px-3" placeholder="NAMA..." id="nameWA"/>
@@ -202,14 +204,14 @@
                                 <!-- <a class="btn btn-outline-primary mr-2" href="https://api.whatsapp.com/send?phone=6287812730567&amp;text=Halo%2C%20saya%20%2A%25nama%25%2A%20dari%20%2A%25jumlah%25%2A%20ingin%20konfirmasi%20kehadiran%20undangan%20pernikahan%20kalian%20bahwa%20%2A%25option%25%2A%0A%20%0ATerimakasih."><i class="fab fa-whatsapp"></i><b> WhatsApp</b></a> -->
                                 <a class="btn btn-outline-primary mr-2" target="_blank" href="#" onclick="sendWA();"><i class="fab fa-whatsapp"></i><b> WhatsApp</b></a>
                             </div>
-                        </form>
+                        <!-- </form> -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- View 5 End
-        
+
     <!-- View 5 Start -->
     <!-- <div class="container-fluid bg-gallery"style="padding: 120px 0; margin: 90px 0;">
         <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
@@ -221,18 +223,18 @@
     <!-- View 5 End -->
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5 pb-5" id="home">
+    <div class="container-fluid p-0 mb-0 pb-0" id="home">
         <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
                 
                 <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
                     <img class="rounded mx-auto m-5 d-block w-100 h-100" src="img/gambar-1.webp" style="object-fit:contain">
                     <div class="carousel-caption d-flex flex-column align-items-center">
+                        <h6 class="text-uppercase text-primary mb-3 pb-1 pt-5" style="letter-spacing: 3px;">KAMI YANG BERBAHAGIA</h6>
                         <div class="section-title position-relative text-center" style="max-width: 900px;">
-                            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">KAMI YANG BERBAHAGIA</h6>
                             <i class="far fa-heart text-white"></i>
-                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Auva & Irul</h1>
                         </div>
+                        <h1 class="font-secondary text-black-50 mt-n3 mb-md-4">Irul & Auva</h1>
                     </div>
                 </div>
                 
@@ -243,7 +245,7 @@
     <!-- Carousel End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white py-5" style="margin-top: 90px;">
+    <div class="container-fluid bg-dark text-white py-5" style="margin-top: 0px;">
         <div class="container text-center py-5">
             <div class="section-title position-relative text-center">
                 <h1 class="font-secondary display-3 text-white">Thank You</h1>
@@ -294,19 +296,21 @@
     function sendWA(){
         // let text = "Free Web Building Tutorials!";
         var nameWA = document.getElementById("nameWA").value;
+        console.log(nameWA);
         var dariWA = document.getElementById("dariWA").value;
         var hadir = "Saya akan Datang"
-        if (document.getElementById("radio2").checked = true) {
+        if (document.getElementById("radio2").checked == true) {
             hadir = "Saya Masih Ragu"
-        }else if(document.getElementById("radio3").checked = true){
+        }else if(document.getElementById("radio3").checked == true){
             hadir = "Saya Tidak Bisa Datang"
         }else{
             hadir = "Saya akan Datang"
         }
-        var txtLink = "https://api.whatsapp.com/send?phone=6287812730567&amp;text=Halo%2C%20saya%20"+nameWA+"%20dari%20%"+dariWA+"%20ingin%20konfirmasi%20kehadiran%20undangan%20pernikahan%20kalian%20bahwa%20%"+hadir+"0A%20%0ATerimakasih." 
+        var txtLink = "https://api.whatsapp.com/send?phone=6287812730567&amp;text=Halo%2C%20saya%20"+nameWA.toString()+"%20dari%20%"+dariWA.toString()+"%20ingin%20konfirmasi%20kehadiran%20undangan%20pernikahan%20kalian%20bahwa%20%"+hadir+"0A%20%0ATerimakasih." 
         // let result = text.link(txtLink);
         // document.getElementById("demo1").innerHTML = result;
 
+        console.log(txtLink);
         location.href = txtLink;
     }
 </script>
